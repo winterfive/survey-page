@@ -1,0 +1,133 @@
+<head>
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One');
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
+  </style>
+</head>
+
+<body>
+  <div id="main-div">
+    <h1 id="title">Share your thoughts</h1>
+
+    <div id="form-outer">
+      <div>
+        <p id="description">
+          Tell us about your recent visit to Faulkner's Strawberry Farm.
+        </p>
+      </div>
+
+      <div>
+        <form id="survey-form" method="GET" action="https://crossorigin.me/https://freecodecamp.com">
+
+          <div class="survey-item">
+            <div class="labels">
+              <label id="name-label" for="name">* Name: </label>
+            </div>
+            <div>
+              <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Name" required>
+            </div>
+          </div>
+
+          <div class="survey-item">
+            <div class="labels">
+              <label id="email-label" for="email">* Email: </label>
+            </div>
+            <div>
+              <input type="email" name="email" id="email" class="input-field" required placeholder="Email" required>
+            </div>
+          </div>
+
+          <div class="survey-item">
+            <div class="labels">
+              <label id="number-label" for="age">* Age: </label>
+            </div>
+
+            <div>
+              <input type="number" name="age" id="number" min="1" max="125" class="input-field" required placeholder="Age">
+            </div>
+          </div>
+
+          <div class="survey-item">
+            <div class="labels">
+              <label for="dayOfVisit">When did you visit the farm?</label>
+            </div>
+
+            <div>
+              <select id="dropdown" name="dayOfVisit" class="dropdown">
+                  <option disabled value>Select an option</option>
+                  <option  value="student">Weekday</option>
+                  <option value="job">Weekend</option>
+                </select>
+            </div>
+          </div>
+
+          <div class="survey-item">
+            <div class="labels">
+              <label for="userRating">* Would recommend Faulkner's Strawberry Farm to others?</label>
+            </div>
+
+            <div>
+              <ul style="list-style: none;">
+                <li class="radio"><label>Definitely<input name="radio-buttons" value="1"  type="radio" class="userRatings" required></label></li>
+                <li class="radio"><label>Maybe<input name="radio-buttons" value="2"  type="radio" class="userRatings" ></label></li>
+                <li class="radio"><label>Definitely Not<input name="radio-buttons" value="3"  type="radio" class="userRatings" ></label></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="survey-item">
+            <div class="labels">
+              <label for="most-like">What do you like most at the farm: </label>
+            </div>
+
+            <div>
+              <select id="most-like" name="mostLike" class="dropdown">
+                  <option disabled selected value>Select an option</option>
+                  <option value="fresh-strawberries">Fresh Strawberries to pick</option>
+                  <option value="prepicked-strawberry-baskets">Prepicked Strawberry Baskets</option>
+                  <option value="all-you-can-eat">All you can eat while picking</option>
+                  <option value="other">Other</option>
+                  </select>
+            </div>
+          </div>
+
+          <div class="survey-item">
+            <div class="labels">
+              <label for="preferences">What would you like to see on your next visit? (Check all that apply): </label>
+            </div>
+
+            <div>
+              <ul id="preferences" style="list-style: none;">
+                <li class="checkbox"><label><input name="prefer" value="1" type="checkbox" class="userRatings">Other types of fruit to pick</label></li>
+                <li class="checkbox"><input name="prefer" value="2" type="checkbox" class="userRatings">A picnic area</li>
+                <li class="checkbox"><label><input name="prefer" value="3" type="checkbox" class="userRatings">Hayride to the fields</label></li>
+                <li class="checkbox"><label><input name="prefer" value="4" type="checkbox" class="userRatings">Longer hours on weekends</label></li>
+                <li class="checkbox"><label><input name="prefer" value="5" type="checkbox" class="userRatings">Prepacked picnic baskets for purchase</label></li>
+                <li class="checkbox"><label><input name="prefer" value="6" type="checkbox" class="userRatings">Strawberry Recipes</label></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="survey-item">
+            <div class="labels">
+              <label for="comments">Any Comments or Suggestions?</label>
+            </div>
+
+            <div>
+              <textarea id="comments" class="input-field" style="height:50px;resize:vertical;" name="comment" placeholder="Enter your comment here..."></textarea>
+            </div>
+          </div>
+
+          <div>
+            <button id="submit" type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <footer>
+      <h1 id="title">Thank you!</h1>
+    </footer>
+  </div>
+</body>
+
+</html>
