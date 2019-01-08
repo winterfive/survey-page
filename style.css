@@ -31,7 +31,7 @@ div {
   max-width: 750px;
 }
 
-#title {
+.title {
   font-family: 'Alfa Slab One';
   font-size: 2.5em;
   font-weight: normal;
@@ -80,6 +80,17 @@ input[type="checkbox"] {
 ul, 
 .dropdown {
   margin: -2px 0 -5px 0;
+  list-style: none;
+}
+
+li {
+  text-align: left;
+}
+
+#comments {
+  resize: vertical;
+  height: 3em;
+  width: 100%;
 }
 
 #submit {
@@ -108,7 +119,6 @@ ul,
   position: relative;
   left: -43px;
   padding-bottom: 2px;
-  vertical-align: left;
 }
 
 @media screen and (min-width: 250px) and (max-width: 600px){ 
