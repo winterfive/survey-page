@@ -1,14 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
- <head>
+
+<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Landing page</title>
+  <title>Faulkner's Strawberry Farm Survey Page</title>
   <link rel="stylesheet" type="text/css" href="style.css">
-  <style>
-    @import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One');
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
-  </style>
 </head>
 
 <body>
@@ -23,7 +20,7 @@
       </div>
 
       <div>
-        <form id="survey-form" method="GET" action="https://crossorigin.me/https://freecodecamp.com">
+        <form id="survey-form" method="GET" action="https://freecodecamp.com">
 
           <div class="survey-item">
             <div class="labels">
@@ -92,7 +89,9 @@
                   <option value="fresh-strawberries">Fresh Strawberries to pick</option>
                   <option value="prepicked-strawberry-baskets">Prepicked Strawberry Baskets</option>
                   <option value="all-you-can-eat">All you can eat while picking</option>
-                  <option value="other">Other</option>
+                  <option value="lovely-view">The lovely view</option>
+                  <option value"jam-selection">Selection of Homemade Jams for purchase</option>
+                  <option value"strawberry-pie">Fresh Strawberry Pie for purchase</option>
                   </select>
             </div>
           </div>
@@ -103,13 +102,13 @@
             </div>
 
             <div>
-              <ul id="preferences" style="list-style: none;">
-                <li class="checkbox"><label><input name="prefer" value="1" type="checkbox" class="userRatings">Other types of fruit to pick</label></li>
-                <li class="checkbox"><input name="prefer" value="2" type="checkbox" class="userRatings">A picnic area</li>
-                <li class="checkbox"><label><input name="prefer" value="3" type="checkbox" class="userRatings">Hayride to the fields</label></li>
-                <li class="checkbox"><label><input name="prefer" value="4" type="checkbox" class="userRatings">Longer hours on weekends</label></li>
-                <li class="checkbox"><label><input name="prefer" value="5" type="checkbox" class="userRatings">Prepacked picnic baskets for purchase</label></li>
-                <li class="checkbox"><label><input name="prefer" value="6" type="checkbox" class="userRatings">Strawberry Recipes</label></li>
+              <ul id="preferences">
+                <li class="checkbox"><label><input name="prefer" value="other-types-of-fruit" type="checkbox" class="userRatings">Other types of fruit to pick</label></li>
+                <li class="checkbox"><input name="prefer" value="picnic-area" type="checkbox" class="userRatings">A picnic area</li>
+                <li class="checkbox"><label><input name="prefer" value="hayride" type="checkbox" class="userRatings">Hayride to the fields</label></li>
+                <li class="checkbox"><label><input name="prefer" value="longer-weekend-hours" type="checkbox" class="userRatings">Longer hours on weekends</label></li>
+                <li class="checkbox"><label><input name="prefer" value="premade-picnic-baskets" type="checkbox" class="userRatings">Prepacked picnic baskets for purchase</label></li>
+                <li class="checkbox"><label><input name="prefer" value="strawberry-recipes" type="checkbox" class="userRatings">Strawberry Recipes</label></li>
               </ul>
             </div>
           </div>
@@ -129,7 +128,7 @@
           </div>
         </form>
         <div>
-          <h6>* = response required.  <br>All data collected by Faulkner's Strawberry Farm is encrypted whiel stored on our local servers.  <br>We will never sell your information.</h6>
+          <h6>* = response required. <br>All data collected by Faulkner's Strawberry Farm is encrypted while stored on our local servers. <br>We will never sell your information.</h6>
         </div>
       </div>
     </div>
