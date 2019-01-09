@@ -66,9 +66,14 @@ body {
   margin-right: 10px;
 }
 
-ul,
-.dropdown {
+ul {
   list-style: none;
+}
+
+li {
+  display: block;
+  position: relative;
+  left: -40px;
 }
 
 #submit {
@@ -89,10 +94,6 @@ ul,
 .dropdown {
   width: 100%;
   border: 1px solid #c0c0c0;
-}
-
-.radio,
-.checkbox {
 }
 
 @media screen and (min-width: 250px) and (max-width: 600px) {
