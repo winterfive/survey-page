@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Faulkner's Strawberry Farm Survey Page</title>
   <link rel="stylesheet" type="text/css" href="style.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous"> -->
 </head>
 
 <body>
@@ -37,44 +37,53 @@
               <label id="email-label" for="email">* Email: </label>
             </div>
             <div>
-              <input type="email" name="email" id="email" class="input-field" required placeholder="Email" required>
+              <input type="email" name="email" id="email" class="input-field" placeholder="Email" required>
             </div>
           </div>
 
           <div class="survey-item">
             <div class="labels">
-              <label id="number-label" for="age">* Age: </label>
+              <label id="number-label" for="age">Age: </label>
             </div>
 
             <div>
-              <input type="number" name="age" id="number" min="1" max="125" class="input-field" required placeholder="Age">
+              <input type="number" name="age" id="number" min="1" max="125" class="input-field" placeholder="Age">
             </div>
           </div>
 
           <div class="survey-item">
             <div class="labels">
-              <label for="dayOfVisit">When did you visit the farm?</label>
+              <label>When did you visit the farm?</label>
             </div>
 
             <div>
               <select id="dropdown" name="dayOfVisit" class="dropdown">
                   <option disabled value>Select an option</option>
-                  <option  value="student">Weekday</option>
-                  <option value="job">Weekend</option>
+                  <option value="weekday">Weekday</option>
+                  <option value="weekend">Weekend</option>
                 </select>
             </div>
           </div>
 
           <div class="survey-item">
             <div class="labels">
-              <label for="userRating">* Would recommend Faulkner's Strawberry Farm to others?</label>
+              <label>* Would recommend Faulkner's Strawberry Farm to others?</label>
             </div>
 
             <div>
               <ul>
-                <li class="radio"><label>Definitely<input name="radio-buttons" value="definitely" type="radio" class="userRatings" required></label></li>
-                <li class="radio"><label>Maybe<input name="radio-buttons" value="maybe" type="radio" class="userRatings" ></label></li>
-                <li class="radio"><label>Definitely Not<input name="radio-buttons" value="def-not" type="radio" class="userRatings" ></label></li>
+                <li>
+                  <input class="radio, useRatings" name="radio-buttons" id="definitely" value="definitely" type="radio" required>
+                  <label for="definitely">Definitely</label>
+                </li>
+                <li>
+                  <input class="radio, userRatings" name="radio-buttons" id="maybe" value="maybe" type="radio">
+                  <label for="maybe">Maybe</label>
+                </li>
+                <li>
+                  <input class="radio, userRatings" name="radio-buttons" id="def-not" value="def-not" type="radio">
+                  <label for="def-not">Definitely Not</label>
+                </li>
               </ul>
             </div>
           </div>
@@ -99,16 +108,35 @@
 
           <div class="survey-item">
             <div class="labels">
-              <label for="preferences">What would you like to see on your next visit? (Check all that apply):</label></div>
+              <label for="preferences">What would you like to see on your next visit? (Check all that apply):</label>
+            </div>
 
             <div>
               <ul>
-                <li class="checkbox"><label>Other types of fruit to pick<input name="prefer" value="other-types-of-fruit" type="checkbox" class="userRatings"></label></li>
-                <li class="checkbox"><label>A picnic area<input name="prefer" value="picnic-area" type="checkbox" class="userRatings"></label></li>
-                <li class="checkbox"><label>Hayride to the fields<input name="prefer" value="hayride" type="checkbox" class="userRatings"></label></li>
-                <li class="checkbox"><label>Longer hours on weekends<input name="prefer" value="longer-weekend-hours" type="checkbox" class="userRatings"></label></li>
-                <li class="checkbox"><label>Picnic Lunches for purchase<input name="prefer" value="premade-picnic-baskets" type="checkbox" class="userRatings"></label></li>
-                <li class="checkbox"><label>Strawberry Recipes<input name="prefer" value="strawberry-recipes" type="checkbox" class="userRatings"></label></li>
+                <li>
+                  <input name="prefer" value="other-types-of-fruit" id="other-types-of-fruit" type="checkbox" class="checkbox, userRatings">
+                  <label for="other-types-of-fruit">Other types of fruit to pick</label>
+                </li>
+                <li>
+                  <input name="prefer" value="picnic-area" id="picnic-area" type="checkbox" class="checkbox, userRatings">
+                  <label for="picnic-area">A picnic area</label>
+                </li>
+                <li>
+                  <input name="prefer" value="hayride" id="hayride" type="checkbox" class="checkbox, userRatings">
+                  <label for="hayride">Hayride to the fields</label>
+                </li>
+                <li>
+                  <input name="prefer" value="longer-weekend-hours" id="longer-weekend-hours" type="checkbox" class="checkbox, userRatings">
+                  <label for="longer-weekend-hours">Longer hours on weekends</label>
+                </li>
+                <li>
+                  <input name="prefer" value="picnic-lunches" id="picnic-lunches" type="checkbox" class="checkbox, userRatings">
+                  <label for="picnic-lunches">Picnic Lunches for purchase</label>
+                </li>
+                <li>
+                  <input name="prefer" value="strawberry-recipes" id="strawberry-recipes" type="checkbox" class="checkbox, userRatings">
+                  <label for="strawberry-recipes">Strawberry Recipes</label>
+                </li>
               </ul>
             </div>
           </div>
