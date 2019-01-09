@@ -63,7 +63,6 @@ body {
 }
 
 .userRatings {
-  float: left;
   margin-right: 10px;
 }
 
@@ -92,14 +91,8 @@ ul,
   border: 1px solid #c0c0c0;
 }
 
-label {
-  padding-top: -2px;
-}
-
 .radio,
 .checkbox {
-  position: relative;
-  left: -43px;
 }
 
 @media screen and (min-width: 250px) and (max-width: 600px) {
